@@ -1,4 +1,4 @@
-//C03EX03G.CPP
+//C03EX03J.CPP
 
 #include <iostream>
 #include <cmath>
