@@ -18,15 +18,10 @@ int main(void){
     cin.ignore(80, '\n');
 
     R1 = A + B;
+    R2 = A - B;
     R3 = A * B;
-    if (A >= B){
-        R2 = A - B;
-        R4 = A / B;
-    }
-    else{
-        R2 = B - A;
-        R4 = B / A;
-    }
+    R4 = A / B;
+    
         
     cout << setfill('*') << setw(32) << "" << endl;
     cout << setfill(' '); 
@@ -35,15 +30,9 @@ int main(void){
     cout << setfill(' '); 
 
     cout << " A + B = " << fixed << setprecision(2) << R1 << endl;
-    if(A >= B)
-        cout << " A - B = " << fixed << setprecision(2) << R2 << endl;
-    else
-        cout << " B - A = " << fixed << setprecision(2) << R2 << endl;
+    cout << " A - B = " << fixed << setprecision(2) << R2 << endl;
     cout << " A X B = " << fixed << setprecision(2) << R3 << endl;
-    if(A >= B)
-        cout << " A / B = " << fixed << setprecision(2) << R4 << endl;
-    else
-        cout << " B / A = " << fixed << setprecision(2) << R4 << endl;
+    cout << " A / B = " << fixed << setprecision(2) << R4 << endl;
 
     cout << setfill('*') << setw(32) << "" << endl;
     cout << setfill(' '); 
