@@ -14,7 +14,7 @@ int main(void){
     cout << "Enter the value of A: "; cin >> A;
     cin.ignore(80, '\n');
 
-    cout << "Enter the value of A: "; cin >> B;
+    cout << "Enter the value of B: "; cin >> B;
     cin.ignore(80, '\n');
 
     R1 = A + B;
