@@ -1,6 +1,7 @@
 //C02EX03C.CPP
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -24,13 +25,19 @@ int main(void)
 
     M = (N1 + N2 + N3 + N4)/4;
 
+    cout << setfill('*') << setw(15) << "" << endl;
+    cout << setfill(' ');
+    cout << "* " << setw(3) << "Resultado" << setw(3) << " *" << endl;
+    cout << setfill('*') << setw(15) << "" << endl;
+    cout << setfill(' ');
+
     if (M >= 5)
         cout << "Aluno esta Aprovado!";
     else
         cout << "Aluno esta Reprovado!";
 
-    cout << endl << endl;
-    cout << "Media: " << M << endl;
+    cout << endl;
+    cout << "Media: " << fixed << setprecision(2) << M << endl << endl;
 
     cout << "Tecle <Enter> para encerrar...";
     cin.get();
