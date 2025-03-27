@@ -7,7 +7,7 @@ using namespace std;
 
 int main(void)
 {
-   int X, maior, menor, i = 0;
+   int X = 0, maior, menor, i = 0;
     
     cout << "Programa Maior e Menor Numero" << endl;
     cout << "* Entre com um numero negativo para encerrar a leitura dos valores *" << endl << endl;
