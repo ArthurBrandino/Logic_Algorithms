@@ -7,7 +7,7 @@ using namespace std;
 
 int main(void)
 {
-    float X, S, M, i = 0;
+    float X, S = 0, M, i = 0;
     
     cout << "Programa Soma e Media de 10 numeros " << endl << endl;
 
