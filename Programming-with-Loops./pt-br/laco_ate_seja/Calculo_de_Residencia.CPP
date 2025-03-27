@@ -1,4 +1,4 @@
-//C05EX01Q.CPP
+//C05EX02Q.CPP
 
 //Para o Programa se tornar mais completo irei utilizar Matrizes que se encontra no Cápitulo 6 do livro de lógica
 
