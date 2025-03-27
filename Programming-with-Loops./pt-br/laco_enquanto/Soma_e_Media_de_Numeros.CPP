@@ -29,7 +29,8 @@ int main(void)
         }
     }
 
-    if (i > 0) {
+    if (i > 0)
+    {
         M = S / i;
 
         cout << setfill('*') << setw(15) << "" << endl;
@@ -41,9 +42,9 @@ int main(void)
         cout << "Total de Valores Lidos = " << i << endl;
         cout << "Soma = " << S << endl;
         cout << "Media = " << fixed << setprecision(2) << M << endl << endl;
-    } else {
+    } 
+    else
         cout << "Nenhum valor positivo foi inserido!" << endl;
-    }
 
     cout << "Tecle <Enter> para encerrar...";
     cin.get();
