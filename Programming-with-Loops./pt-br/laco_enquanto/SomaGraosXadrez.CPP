@@ -8,7 +8,7 @@ using namespace std;
 int main(void)
 {
     int I = 0;
-    long int X = 1, S = 0;
+    unsigned long long X = 1, S = 0;
 
     cout << "Programa do somatorio do numero de graos que se pode obter num tabuleiro de xadrez" << endl << endl;
 
