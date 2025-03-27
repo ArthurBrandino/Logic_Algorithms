@@ -6,15 +6,13 @@ using namespace std;
 
 int main(void)
 {
-    int R, I = 0;
+    int I = 0;
 
     cout << "Programa Numeros Divisiveis por 4 menores de 200" << endl << endl;
 
     while (!(I >= 200))
     {
-        R = I - 4 *(I / 4);
-
-        if (R == 0)
+        if (I % 4 == 0)
             cout << I << " - ";
         I++;
     }
