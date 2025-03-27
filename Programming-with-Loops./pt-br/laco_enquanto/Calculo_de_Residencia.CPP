@@ -21,7 +21,7 @@ int main(void)
     cout << "Programa Calculo de um Residencia em m^2" << endl << endl;
 
     resp = 'S';
-    while(resp = 'S')
+    while(resp == 'S')
     {
         if (i >= 10) {
             cout << "Limite de comodos atingido!\n";
