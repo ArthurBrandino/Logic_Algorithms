@@ -21,6 +21,7 @@ int main(void)
     }
 
     cout << "." << endl << endl;
+    cout << "Soma total = " << X << endl << endl;
 
     cout << "Tecle <Enter> para encerrar...";
     cin.get();
