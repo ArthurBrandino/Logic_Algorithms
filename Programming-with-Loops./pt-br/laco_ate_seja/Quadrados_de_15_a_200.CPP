@@ -15,7 +15,7 @@ int main(void)
     {
         X = pow(I, 2);
 
-        cout << X << " - ";
+        cout << I << "^2 = " << X << endl;
 
         I++;
     }
