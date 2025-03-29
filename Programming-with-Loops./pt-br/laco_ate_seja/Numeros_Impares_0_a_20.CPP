@@ -6,17 +6,18 @@ using namespace std;
 
 int main(void)
 {
-    int R, I = 0;
+    int I = 0;
 
     cout << "Programa Numeros Impares de 0 a 20" << endl << endl;
 
     while (!(I > 20))
     {
-        R = I - 2 *(I / 2);
-
-        if(!(R==0))
-            cout << I << " - ";
-
+        if(I % 2 != 0)
+        {
+            cout << I;
+            if (I < 19)
+                cout << " - ";
+        }  
         I++;
     }
 
