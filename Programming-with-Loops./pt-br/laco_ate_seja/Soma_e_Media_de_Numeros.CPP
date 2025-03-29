@@ -1,4 +1,4 @@
-//C05EX01N.CPP
+//C05EX02N.CPP
 
 #include <iostream>
 #include <iomanip>
@@ -23,9 +23,10 @@ int main(void)
         cin >> X;
         cin.ignore(80, '\n');
 
-        if (X < 0) {
-            S += X;
-            i++;
+        if (X >= 0) 
+        {
+          S += X;
+          i++;
         }
     }
 
