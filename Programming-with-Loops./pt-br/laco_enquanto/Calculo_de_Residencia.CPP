@@ -18,7 +18,7 @@ int main(void)
     char resp;
     string* nome = new string [10];
     
-    cout << "Programa Calculo de um Residencia em m^2" << endl << endl;
+    cout << "Programa Calculo de uma Residencia em m^2" << endl << endl;
 
     resp = 'S';
     while(resp == 'S')
