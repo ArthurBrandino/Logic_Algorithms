@@ -1,12 +1,13 @@
 //C05EX01J.CPP
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 int main(void)
 {
-    int F, I = 10;
+    float F, I = 10;
 
     cout << "Programa de conversao de Celsius para Fahrenheit de 10 em 10 graus" << endl << endl;
 
@@ -14,9 +15,9 @@ int main(void)
     {
         F = I * 9/5 + 32;
 
-        cout << I << " graus Celsius = " << F << " graus Fahrenheit" << endl;
+        cout << fixed << setprecision(2) << I << " graus Celsius equivalem a " << F << " graus Fahrenheit." << endl;
 
-        I = I + 10;
+        I += 10;
     }
 
     cout << endl;
