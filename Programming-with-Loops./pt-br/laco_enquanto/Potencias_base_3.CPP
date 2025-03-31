@@ -7,15 +7,15 @@ using namespace std;
 
 int main(void)
 {
-    int X, I=0;
+    int X, I = 0;
 
     cout << "Programa valor das potencias de base 3" << endl << endl;
 
-    while(I<=15)
+    while(I <= 15)
     {
         X = pow(3, I);
 
-        cout << X << endl;
+        cout << "3^" << I << " = " << X << endl;
 
         I++;
     }
