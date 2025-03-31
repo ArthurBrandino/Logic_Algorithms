@@ -12,7 +12,7 @@ int main(void)
 
     while (I <= 20)
     {
-        if(I % 2 != 0))
+        if(I % 2 != 0)
             cout << I << " - ";
         I++;
     }
