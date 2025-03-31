@@ -6,13 +6,13 @@ using namespace std;
 
 int main(void)
 {
-    int X, I=0;
+    int X = 0, I=0;
 
     cout << "Programa Somatorio de 1 ate 500" << endl << endl;
 
-    while (I<=500)
+    while (I <= 500)
     {
-        X = X + I;
+        X += I;
 
         cout << X << " - ";
 
