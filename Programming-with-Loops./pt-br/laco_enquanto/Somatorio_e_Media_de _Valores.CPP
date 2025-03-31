@@ -6,17 +6,17 @@ using namespace std;
 
 int main(void)
 {
-    int I=1;
-    float X, S=0, M=0;
+    int I = 1;
+    float X, S = 0, M = 0;
 
     cout << "Programa Somatorio e Media de 10 Valores" << endl << endl;
 
-    while(I<=10)
+    while(I <= 10)
     {
         cout << "Entre com o " << I << " valor: "; cin >> X;
         cin.ignore(80, '\n');
 
-        S = S + X;
+        S += X;
         I++;
     }
 
