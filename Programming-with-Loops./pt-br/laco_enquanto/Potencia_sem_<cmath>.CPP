@@ -18,7 +18,7 @@ int main(void)
 
     while(I<=E)
     {
-        X = X * B;
+        X *= B;
         I++;
     }
 
