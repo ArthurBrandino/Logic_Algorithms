@@ -13,7 +13,12 @@ int main(void)
     while (I <= 20)
     {
         if(I % 2 != 0)
-            cout << I << " - ";
+        {
+            cout << I;
+            if(I < 19)
+                cout<< " - ";
+        }
+
         I++;
     }
 
