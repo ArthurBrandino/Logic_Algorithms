@@ -7,7 +7,7 @@ using namespace std;
 
 int main(void)
 {
-    int X = 1, FAT = 1, i = 0;
+    int X = 1, FAT, i;
     
     cout << "Programa Fatorial de Numeros Impares de 1 a 10 " << endl << endl;
 
