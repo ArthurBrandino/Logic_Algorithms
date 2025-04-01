@@ -10,7 +10,7 @@ int main(void)
 
     cout << "Programa Sequencia de Fibonacci" << endl << endl;
 
-    cout << PROXIMO << ", ";
+    cout << PROXIMO;
 
     while(I <= 15)
     {
