@@ -54,26 +54,30 @@ void organizar(void)
 
 void cabecalho(void)
 {
-    cout << left << setw(5) << "N.o" << " ";
-    cout << left << setw(20) << "Nome" << " ";
-    cout << left << setw(10) << "Nota 1" << " ";
-    cout << left << setw(10) << "Nota 2" << " ";
-    cout << left << setw(10) << "Media" << " ";
-    cout << left << setw(15) << "Situacao" << endl;
+    cout << left << setw(5)  << "N.o"     
+         << setw(20) << "Nome"    
+         << setw(10) << "Nota 1"  
+         << setw(10) << "Nota 2"  
+         << setw(10) << "Media"   
+         << setw(15) << "Situacao" << endl;
 }
 
 void exibirAluno(int i)
 {
-    cout << left << setw(5) << i + 1;
-    cout << left << setw(20) << dados[i].nome;
-    cout << left << setw(10) << dados[i].n1;
-    cout << left << setw(10) << dados[i].n2;
-    cout << left << setw(10) << dados[i].m;
+    cout << left << setw(5)  << i + 1
+         << setw(20) << dados[i].nome
+         << setw(10) << fixed << setprecision(2) << dados[i].n1
+         << setw(10) << fixed << setprecision(2) << dados[i].n2
+         << setw(10) <<  fixed << setprecision(2) <<dados[i].m;
+
     if (dados[i].aprovado)
-        cout << left << setw(15) << "Aprovado" << endl << endl;
+        cout << setw(15) << "Aprovado";
     else
-        cout << left << setw(15) << "Reprovado" << endl << endl;
+        cout << setw(15) << "Reprovado";
+
+    cout << endl << endl;
 }
+
 
 void todos(void)
 {
@@ -247,11 +251,12 @@ void adicionar(void)
         // Cálculo
         calculos(limiteAlunos);
         
+        cout << "O Aluno " << dados[limiteAlunos].nome << " foi Adicionado!" << endl;
 
         // Verifica se ainda pode continuar
         if (limiteAlunos < 20)
         {
-            cout << "Deseja Adicionar outro Aluno? (S/N): ";
+            cout << "\nDeseja Adicionar outro Aluno? (S/N): ";
             cin >> resp;
             cin.ignore(80, '\n');
             resp = toupper(resp);
@@ -379,6 +384,8 @@ void excluir(void)
 
     do
     {
+        system("cls"); // Windows
+        system("clear"); // Linux
         cout << setfill('*') << setw(30) << "" << endl;
         cout << setfill(' ');
         cout << "*      Excluir Alunos      *" << endl;
@@ -460,16 +467,20 @@ void cadastrar(void)
     {
         system("cls"); // Windows
         system("clear"); // Linux
-        cout << setfill('*') << setw(30) << "" << endl;
+        cout << setfill('*') << setw(41) << "" << endl;
         cout << setfill(' ');
-        cout << "*       Cadastro de Aluno       *" << endl;
-        cout << setfill('*') << setw(30) << "" << endl << endl;
+        cout << "*           Cadastro de Aluno           *" << endl;
+        cout << setfill('*') << setw(41) << "" << endl;
         cout << setfill(' ');
 
-        cout << "Tecle (1) para Adicionar Alunos" << endl;
-        cout << "Tecle (2) para Editar Alunos" << endl;
-        cout << "Tecle (3) para Excluir Alunos" << endl;
-        cout << "Tecle (0) para Cancelar a Operacao" << endl;
+        cout << setfill('*') << setw(41) << "" << endl;
+        cout << setfill(' ');
+        cout << "*   Tecle (1) para Adicionar Alunos     *" << endl;
+        cout << "*   Tecle (2) para Editar Alunos        *" << endl;
+        cout << "*   Tecle (3) para Excluir Alunos       *" << endl;
+        cout << "*   Tecle (0) para Cancelar a Operacao  *" << endl;
+        cout << setfill('*') << setw(41) << "" << endl;
+        cout << setfill(' ');
         cout << "Opcao: "; cin >> opcao; cin.ignore(80, '\n');
         
         switch(opcao)
@@ -499,6 +510,8 @@ void pesquisa(void)
 
     while(resp == 'S')
     {
+        system("cls"); // Windows
+        system("clear"); // Linux
         cout << setfill('*') << setw(30) << "" << endl;
         cout << setfill(' ');
         cout << "*       Pesquisar Alunos       *" << endl;
@@ -571,21 +584,21 @@ int main(void)
         // Exibe o menu principal
         cout << "Programa de Registro de Alunos" << endl << endl;
 
-        cout << setfill('*') << setw(30) << "" << endl;
+        cout << setfill('*') << setw(33) << "" << endl;
         cout << setfill(' ');
-        cout << "*      PAGINA INICIAL      *" << endl;
-        cout << setfill('*') << setw(30) << "" << endl;
+        cout << "*        PAGINA INICIAL         *" << endl;
+        cout << setfill('*') << setw(33) << "" << endl;
         cout << setfill(' ');
 
-        cout << setfill('*') << setw(30) << "" << endl;
+        cout << setfill('*') << setw(33) << "" << endl;
         cout << setfill(' ');
-        cout << "*       (1) Cadastrar           *" << endl;
-        cout << "*       (2) Pesquisar           *" << endl;
-        cout << "*       (3) Lista de Alunos     *" << endl;
-        cout << "*       (4) Lista de Aprovados  *" << endl;
-        cout << "*       (5) Lista de Reprovados *" << endl;
-        cout << "*       (0) Sair                *" << endl;
-        cout << setfill('*') << setw(30) << "" << endl;
+        cout << "*      (1) Cadastrar            *" << endl;
+        cout << "*      (2) Pesquisar            *" << endl;
+        cout << "*      (3) Lista de Alunos      *" << endl;
+        cout << "*      (4) Lista de Aprovados   *" << endl;
+        cout << "*      (5) Lista de Reprovados  *" << endl;
+        cout << "*      (0) Sair                 *" << endl;
+        cout << setfill('*') << setw(33) << "" << endl;
         cout << setfill(' ');
         cout << "Opcao: "; cin >> opcao; cin.ignore(80, '\n');
 
