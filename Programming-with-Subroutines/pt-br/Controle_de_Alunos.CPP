@@ -27,7 +27,7 @@ void continuar(void)
 
 void calculos(int J)
 {
-    dados[J].m = (dados[J].n1 + dados[J].n2)/2; // cauculo da media do aluno
+    dados[J].m = (dados[J].n1 + dados[J].n2)/2; // calculo da media do aluno
     if(dados[J].m >= 5)
         dados[J].aprovado = true;
     else
